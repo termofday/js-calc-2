@@ -24,9 +24,23 @@ body {
 
   text-align: right;
 
+  margin: 0 auto;
+
   padding: 15px;
 
   height: 100%;
+  width: 80%;
+}
+
+.display-lastcalc {
+  background-color: gainsboro;
+  width: 100%;
+  height: 30px;
+  display: block;
+}
+
+.display-calc {
+  background-color: gainsboro;
   width: 100%;
 }
 
@@ -34,15 +48,37 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 5px;
+  padding: 15px;
 }
 
 .btn {
-  padding: 15px;
+  padding: 20px;
   font-size: 20px;
+
+  border: solid 2px;
+  border-radius: 15px;;
+
+  min-height: 60px;
+  min-width: 60px;
+}
+
+.btn:hover {
+  background-color: gainsboro;
+  color: yellow;
+}
+
+.btnYellow {
+  background-color: yellow;
+  color: black;
+}
+
+.btnYellow:hover {
+  color: yellow;
 }
 
 .cc {
-  position: absolute;
+  position: static;
   bottom: 0;
   left: 0;
 }

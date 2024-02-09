@@ -14,37 +14,38 @@
       <div class="calc-body">
 
         <div class="calc-display">
-          0
+          <div class="display-lastcalc" id="display-lastcalc"></div>
+          <div class="display-calc" id="display-calc"></div>
         </div>
 
         <div class="calc-layout">
           <div>
-            <button class="btn">Clear</button>
-            <button class="btn">Delete</button>
+            <button class="btn btnYellow" id="btn-clear" onclick="btnHandler('clear')">Clear</button>
+            <button class="btn btnYellow" id="btn-delete" onclick="btnHandler('delete')">Delete</button>
           </div>
           <div>
-            <button class="btn">7</button>
-            <button class="btn">8</button>
-            <button class="btn">9</button>
-            <button class="btn">/</button>
+            <button class="btn" onclick="btnHandler('7')">7</button>
+            <button class="btn" onclick="btnHandler('8')">8</button>
+            <button class="btn" onclick="btnHandler('9')">9</button>
+            <button class="btn btnYellow" onclick="btnHandler('/')">/</button>
           </div>
           <div>
-            <button class="btn">4</button>
-            <button class="btn">5</button>
-            <button class="btn">6</button>
-            <button class="btn">*</button>
+            <button class="btn" onclick="btnHandler('4')">4</button>
+            <button class="btn" onclick="btnHandler('5')">5</button>
+            <button class="btn" onclick="btnHandler('6')">6</button>
+            <button class="btn btnYellow" onclick="btnHandler('*')">*</button>
           </div>
           <div>
-            <button class="btn">1</button>
-            <button class="btn">2</button>
-            <button class="btn">3</button> 
-            <button class="btn">-</button>
+            <button class="btn" onclick="btnHandler('1')">1</button>
+            <button class="btn" onclick="btnHandler('2')">2</button>
+            <button class="btn" onclick="btnHandler('3')">3</button> 
+            <button class="btn btnYellow" onclick="btnHandler('-')">-</button>
           </div>
           <div>
-            <button class="btn">.</button>
-            <button class="btn">0</button>
-            <button class="btn">=</button>
-            <button class="btn">+</button>
+            <button class="btn btnYellow" id="btn-point" onclick="btnHandler('.')">.</button>
+            <button class="btn btnYellow" onclick="btnHandler('0')">0</button>
+            <button class="btn btnYellow" id="btn-equal" onclick="btnHandler('=')">=</button>
+            <button class="btn btnYellow" onclick="btnHandler('+')">+</button>
           </div>
         </div>
 
@@ -55,6 +56,6 @@
 
     </div>
 
-    <script type="module" src="/main.js"></script>
+    <script src="/main.js"></script>
   </body>
 </html>
