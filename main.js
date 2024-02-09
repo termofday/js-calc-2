@@ -34,7 +34,14 @@ const appendNum = (num) => {
   if (displayCalc.textContent === '0' || resetTheScreen) {
     resetDisplay();
   }
-  displayCalc.textContent += num;
+  if (displayCalc.textContent.length >= 16 || displayLastcalc.textContent.length >= 16) {
+    alert("Only 17 chars ...");
+    resetDisplay();
+    displayCalc.textContent = '0';
+  } else {
+    displayCalc.textContent += num;
+  }
+  
 }
 
 const appendPoint = () => {
@@ -48,7 +55,7 @@ const appendPoint = () => {
 }
 
 const getResult = (num) => {
-  return Math.round((num * 1000) / 1000);
+  return Math.round(num * 1000) / 1000;
 }
 
 const add = (a, b) => {

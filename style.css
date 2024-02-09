@@ -15,9 +15,15 @@ body {
 .calc-body {
   margin: 0 auto;
   
+  margin-top: 50px;
+
   width: 300px;
   
   background-color: blueviolet;
+
+  border-radius: 25px;
+
+  box-shadow: 15px 15px 20px #888888;
 }
 
 .calc-display {
@@ -30,6 +36,7 @@ body {
 
   height: 100%;
   width: 80%;
+
 }
 
 .display-lastcalc {
@@ -37,11 +44,24 @@ body {
   width: 100%;
   height: 30px;
   display: block;
+
+  border-radius: 15px 15px 0px 0px;
+  
+  padding: 5px;
 }
 
 .display-calc {
   background-color: gainsboro;
   width: 100%;
+  font-size: 1.55rem;
+
+  border-radius: 0px 0px 15px 15px;
+  
+  padding: 5px;
+}
+
+.display-lastcalc {
+  font-size: 1.35rem;
 }
 
 .calc-layout {
@@ -78,7 +98,8 @@ body {
 }
 
 .cc {
-  position: static;
+  position: absolute;
   bottom: 0;
-  left: 0;
+  width: 100%;
+  text-align: center;
 }
