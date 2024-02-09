@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+
+}
+
+.wrapper {
+  width: 100%;
+}
+
+.calc-body {
+  margin: 0 auto;
+  
+  width: 300px;
+  
+  background-color: blueviolet;
+}
+
+.calc-display {
+
+  text-align: right;
+
+  padding: 15px;
+
+  height: 100%;
+  width: 100%;
+}
+
+.calc-layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn {
+  padding: 15px;
+  font-size: 20px;
+}
+
+.cc {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
